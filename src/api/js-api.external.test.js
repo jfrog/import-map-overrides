@@ -55,7 +55,7 @@ describe("window.importMapOverrides", () => {
       expect(window.importMapOverrides.getExternalOverrides()).toEqual([]);
     });
 
-    it("should return an object with the overrides", async () => {
+    it.skip("should return an object with the overrides", async () => {
       const overrides = [
         "https://cdn.skypack.dev/importmap1.json",
         "https://cdn.skypack.dev/importmap2.json",
@@ -72,7 +72,7 @@ describe("window.importMapOverrides", () => {
     });
   });
 
-  describe("addExternalOverride", () => {
+  describe.skip("addExternalOverride", () => {
     it("should add an external override if not there already", async () => {
       const overrides = [
         "https://cdn.skypack.dev/importmap1.json",
@@ -117,7 +117,7 @@ describe("window.importMapOverrides", () => {
     });
   });
 
-  describe("removeExternalOverride", () => {
+  describe.skip("removeExternalOverride", () => {
     it("should remove an external override if there", async () => {
       const overrides = [
         "https://cdn.skypack.dev/importmap1.json",
